@@ -1,0 +1,129 @@
+{
+  "basics": {
+    "name": "Paresh Pradhan",
+    "label": "Machine Learning Engineer",
+    "picture": "../assets/images/paresh_pradhan.jpg",
+    "email": "pareshppp@gmail.com",
+    "phone": "+91-7755920165",
+    "website": "https://pareshppp.github.io",
+    "summary": "Machine Learning Engineer with working knowledge in data analysis and model creation using Python. Worked with both classical machine learning algorithms using scikit-learn and Deep Learning algorithms using Tensorflow, Keras & PyTorch.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Pune",
+      "countryCode": "IN",
+      "region": "Maharashtra"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "paresh-pradhan",
+        "url": "https://linkedin.com/in/paresh-pradhan"
+      },
+      {
+        "network": "GitHub",
+        "username": "pareshppp",
+        "url": "http://github.com/pareshppp"
+      },
+      {
+        "network": "Twitter",
+        "username": "PareshPran",
+        "url": "https://twitter.com/@PareshPran"
+      },
+      {
+        "network": "StackOverflow",
+        "username": "8194922/paresh",
+        "url": "https://stackoverflow.com/users/8194922/paresh"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Tata Consultancy Services, Pune",
+      "position": "System Engineer (Application Support Lead)",
+      "website": "",
+      "startDate": "2014",
+      "endDate": "Present",
+      "summary": "Leading an Application Support (L3) team providing technical support in the areas of ETL (Informatica & Unix batches) and database for a US-Banking client.",
+      "highlights": [
+        "Monitoring & break-fix for daily & monthly ETL & Batch jobs",
+        "Handling incidents & change requests",
+        "SQL data analysis & reporting",
+        "Working on development projects for Process Improvements",
+        "Working on other ad-hoc projects"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ITER, Siksha 'O' Anusandhan University, Bhubaneswar",
+      "area": "Electronics and Communications Engineering",
+      "studyType": "Bachelor in Technology",
+      "startDate": "2010",
+      "endDate": "2014"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Machine Learning",
+      "certlist": [
+        "Machine Learning Nanodegree Certification (Basic & Advanced) - Udacity",
+        "Deep Learning Nanodegree Certification - Udacity"
+        ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "level": "Hands-On Experience",
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "Tensorflow",
+        "Keras",
+        "Scikit-Learn"
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "level": "Hands-On Experience",
+      "keywords": [
+        "SQL",
+        "Numpy",
+        "Pandas",
+        "Matplotlib"
+      ]
+    },
+    {
+      "name": "Other",
+      "level": "Hands-On Experience",
+      "keywords": [
+        "R",
+        "Bash Sripting"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional speaker"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Casual speaker"
+    },
+    {
+      "language": "Oriya",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Reading",
+      "keywords": [
+        "Fantasy",
+        "Web-Novels"
+      ]
+    }
+  ]
+}
