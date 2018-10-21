@@ -90,3 +90,4 @@ future: true
 
 # Permalink for posts & pages
 permalink: /blogs/:title/
+
