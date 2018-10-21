@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Site
-email: pareshppp@gmail.com
-description: Where we talk about anything and everything.
+title: "Paresh's Blog"
+email: "pareshppp@gmail.com"
+description: 
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: "https://pareshppp.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  name: Paresh Pradhan
+  name: "Paresh Pradhan"
   twitter: PareshPran
   picture: "/assets/images/paresh-pradhan.jpg"
 twitter_username: PareshPran
