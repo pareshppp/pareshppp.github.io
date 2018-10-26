@@ -1,12 +1,6 @@
----
-layout: post
-title: Dog Breed Classification using Pytorch - Part 1
-categories: [projects]
-tags: [image-classification, pytorch]
-date: 2018-10-21 15:00:00 +0530
----
 
-## (Creating model from Scratch)
+# Dog Breed Classification using Pytorch - Part 1
+## Creating model from Scratch
 
 ### Introduction
 
@@ -34,6 +28,8 @@ Yellow Labrador | Chocolate Labrador | Black Labrador
 
 The model will have to account for all of these factors to produce a high accuracy.
 
+Let's get started.
+
 ### Import Libraries
 
 
@@ -57,12 +53,12 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 The first step is to load-in the Images and check the total size of our dataset.
 
-* The Dog Images Dataset can be downloaded from here: [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place it in this project's home directory, at the location `/dogImages`. 
+> The Dog Images Dataset can be downloaded from here: [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place it in this project's home directory, at the location `/dogImages`. 
 
 
 ```python
 # load filenames for dog images
-dog_files = np.array(glob("dogImages/*/*/*"))
+dog_files = np.array(glob(os.path.join('dogImages','*','*','*')))
 
 # print number of images in dataset
 print('There are %d total dog images.' % len(dog_files))
@@ -87,7 +83,7 @@ Define the parameters needed in data loader and model creation.
 
 
 ```python
-## parameters
+# parameters
 n_epochs = 20
 num_classes = 133
 num_workers = 0
@@ -102,7 +98,7 @@ In the next step we will do the following:
 2. Load the image data using `torchvision.datasets.ImageFolder` and apply the transformations.
 3. Create Dataloaders using `torch.utils.data.DataLoader`.  
 
-**Note:**
+> **Note:**
 - We have created dictionaries for all three steps that are divided into train, validation and test sets.
 - The Image Resize shape and mean & standard-deviation values for Normalization module were chosen so as to replicate the VGG16 model.
 
@@ -135,9 +131,9 @@ trans = {
 }
 
 data = {
-    'train': datasets.ImageFolder('dogImages/train', transform=trans['train']),
-    'valid': datasets.ImageFolder('dogImages/valid', transform=trans['valid']),
-    'test': datasets.ImageFolder('dogImages/test', transform=trans['test'])
+    'train': datasets.ImageFolder(os.path.join('dogImages','train'), transform=trans['train']),
+    'valid': datasets.ImageFolder(os.path.join('dogImages','valid'), transform=trans['valid']),
+    'test': datasets.ImageFolder(os.path.join('dogImages','test'), transform=trans['test'])
 }
 
 loaders_scratch = {
