@@ -1,5 +1,11 @@
+---
+layout: post
+title: Dog Breed Classification using Pytorch - Part 1
+categories: [projects]
+tags: [image-classification, pytorch, cnn, deep-learning]
+date: 2018-10-21 15:00:00 +0530
+---
 
-# Dog Breed Classification using Pytorch - Part 1
 ## Creating model from Scratch
 
 ### Introduction
