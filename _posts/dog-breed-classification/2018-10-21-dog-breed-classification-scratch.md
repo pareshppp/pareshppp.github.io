@@ -532,3 +532,9 @@ test(loaders_scratch, model_scratch, criterion_scratch, use_cuda)
 ### Conclusion
 
 With only 20 epochs of training we achieved an accuracy of 11%. 11% may seem very low but remember that random-chance would have given us an accuracy of less than 1%. To get a higher accuracy we need to use more complex models than the one we used here. So, in the next post we will use Transfer Learning and work on VGG16 architecture.
+
+The code for the entire project can be found here: <https://github.com/pareshppp/Dog-Breed-Classification>
+
+### Acknowledgements
+
+This project was based upon the Dog Breed Classification project I completed as part of Udacity's Deep Learning Nanodegree program.
