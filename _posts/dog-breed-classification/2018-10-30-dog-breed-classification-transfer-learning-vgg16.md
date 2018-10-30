@@ -420,10 +420,10 @@ test(loaders_transfer, model_transfer, criterion_transfer, use_cuda)
 
 With only 5 epochs of training we achieved an accuracy of over 70%. The loss was still decreasing, so we may have been able to get even better performance with more training. This is a huge improvement over the ~10% accuracy we got using the model we created from scratch in [Part-1](https://pareshppp.github.io/blogs/dog-breed-classification-scratch/).
 
+VGG16 is not the most advanced model architecture for image recognition. We can get near human level accuracy by using other model architectures such as ResNet. We will look into that in a future post.
+
 The full code for this post can found at this [link](https://github.com/pareshppp/Dog-Breed-Classification/blob/master/Dog-Breed-Classification-Transfer-Learning-VGG16.ipynb).
 
 ### Acknowledgements
 
 This project is based on Dog-Breed-Classification project created as part of Udacity's Deep Learning Nanodegree program.
-
-VGG16 is not the most advanced model architecture for image recognition. We can get near human level accuracy by using other model architectures such as ResNet. We will look into that in a future post.
