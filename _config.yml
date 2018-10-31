@@ -13,81 +13,97 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-lang: en-US
+# theme: jekyll-theme-so-simple
+remote_theme: mmistakes/so-simple-theme
+locale: en-US
 title: "Paresh's Blog"
-email: "pareshppp@gmail.com"
-description: 
-baseurl: # the optional subpath of your site, e.g. "/blog"
+description: "Where I write about what I do."
+baseurl: # the subpath of your site, e.g. "/blog"
 url: "https://pareshppp.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author:
-  name: "Paresh Pradhan"
-  twitter: PareshPran
-  picture: "/assets/images/paresh-pradhan.jpg"
-twitter_username: PareshPran
-github_username: pareshppp
-logo: "/assets/images/favicon.ico" # path of site logo, e.g. "/assets/images/logo.png"
-search: true # true, false (default)
-search_full_content: false # true, false (default)
-search_provider: # lunr (default), algolia
-algolia:
-  application_id: # YOUR_APPLICATION_ID
-  index_name: # YOUR_INDEX_NAME
-  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
-  powered_by: # true (default), false
+logo: # path of site logo, e.g. "/images/logo.png"
+date_format: "%B %-d, %Y"
+read_time: true # reading time estimates, e.g. true
+words_per_minute: # 200
+mathjax: true # MathJax equations, e.g. true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+disqus:
+  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+twitter:
+  username: PareshPran # site's Twitter username, e.g. "mmistakes"
+
+# Liquid
+liquid:
+  error_mode: strict
 
 # Build settings
+permalink: /blogs/:title/
 markdown: kramdown
-# theme: jekyll-theme-basically-basic
-remote_theme: "mmistakes/jekyll-theme-basically-basic"
-plugins: # previsously gems
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
 feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
+# paginate: 10
+# paginate_path: /page:num/
+
+# Search
+search_full_content: false # can have performance implications for large sites
+
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
 # Exclude from processing.
-exclude:
-  - .asset-cache
-  - .bundle
-  - .codeclimate.yml
-  - .editorconfig
-  - .gitattributes
-  - .jekyll-assets-cache
-  - .sass-cache
-  - .scss-lint.yml
-  - CHANGELOG
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - node_modules
-  - Rakefile
-  - README
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - /docs # ignore Basically Basic sample site
-  - /example # ignore Basically Basic dev site
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
 
 # Front Matter Defaults
 defaults:
-  # _posts
+  # Posts defaults
   - scope:
       path: "_posts"
       type: posts
     values:
       layout: post
-      read_time: true
+      share: true
 
-# See Future Posts
-future: true
+# Site Author
+author:
+  name: "Paresh Pradhan"
+  picture: "/assets/images/paresh-pradhan.jpg"
+  email: "pareshppp@gmail.com"
+  twitter: "@PareshPran"
+  links:
+    - title:
+      url:
+      icon:
 
-# Permalink for posts & pages
-permalink: /blogs/:title/
-
+# Footer Links
+footer_links:
+  - title: GitHub
+    url: https://github.com/pareshppp
+    icon: fab fa-github-square
+  - title: Twitter
+    url: https://twitter.com/PareshPran
+    icon: fab fa-twitter-square
+  - title: LinkedIn
+    url: https://linkedin.com/in/paresh-pradhan/
+    icon: fab fa-linkedin

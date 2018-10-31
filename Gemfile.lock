@@ -146,12 +146,6 @@ GEM
     jekyll-theme-architect (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
-    jekyll-theme-basically-basic (1.4.1)
-      jekyll (~> 3.7)
-      jekyll-feed (~> 0.10)
-      jekyll-paginate (~> 1.1)
-      jekyll-seo-tag (~> 2.5)
-      jekyll-sitemap (~> 1.2)
     jekyll-theme-cayman (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -215,7 +209,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    pathutil (0.16.1)
+    pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
     rb-fsevent (0.10.3)
@@ -252,7 +246,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate
   jekyll-remote-theme
-  jekyll-theme-basically-basic
 
 BUNDLED WITH
    1.16.4

@@ -35,7 +35,7 @@ gem "jekyll-remote-theme"
 
 # New Gem Themes
 # gem "minimal-mistakes-jekyll"
-gem "jekyll-theme-basically-basic"
+# gem "jekyll-theme-basically-basic"
 
 # Other Gems
 # gem "jekyll-include-cache"

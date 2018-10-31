@@ -1,10 +1,6 @@
 ---
 layout: home
-paginate: true
-image: "/assets/images/home-header-image.jpg"
-image: 
-  path: "/assets/images/home-header-image.jpg"
-  thumbnail: "/assets/images/bookpile-thumbnail.jpg"
+limit: 10
+show_excerpts: true
+entries_layout: list
 ---
-
-Hi, this is Paresh.

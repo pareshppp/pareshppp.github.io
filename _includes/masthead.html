@@ -1,27 +1,13 @@
-{% if site.logo contains '://' %}
-  {% assign site_logo = site.logo %}
-{% else %}
-  {% assign site_logo = site.logo | relative_url %}
-{% endif %}
-
-<header id="masthead">
-  <div class="inner">
-    <div class="title-area">
-      {% if page.url == '/' %}
-        <h1 class="site-title">
-          <a href="{{ '/' | relative_url }}">
-            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
-            <span>{{ site.title | escape }}</span>
-          </a>
-        </h1>
-      {% else %}
-        <p class="site-title">
-          <a href="{{ '/' | relative_url }}">
-            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
-            <span>{{ site.title | escape }}</span>
-          </a>
-        </p>
-      {% endif %}
-    </div>
+<header class="masthead">
+  <div class="wrap">
+    {% if site.logo %}
+      <a href="{{ '/' | relative_url }}" class="site-logo" rel="home" title="{{ site.title }}">
+        <img src="{{ site.logo | relative_url }}" class="site-logo-img animated fadeInDown" alt="{{ site.title }}">
+      </a>
+    {% endif %}
+    {% unless page.image.path %}
+      <h1 class="site-title animated fadeIn"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p class="site-description animated fadeIn" itemprop="description">{{ site.description }}</p>
+    {% endunless %}
   </div>
-</header>
+</header><!-- /.masthead -->

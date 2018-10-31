@@ -20,7 +20,7 @@ layout: page
   <section id="{{ year.name }}" class="taxonomy-section">
     <h2 class="taxonomy-title">{{ year.name }}</h2>
     <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% for post in year.items %}
+      {% for entry in year.items %}
         {% include entry.html %}
       {% endfor %}
     </div>
